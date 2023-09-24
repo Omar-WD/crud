@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="crud">
+      <div class="head">
+        <!-- <h2>CRUD</h2> -->
+        <h2 class="headingTitle">PRODUCT MANAGEMENT SYSTEM</h2>
+      </div>
+      <div class="input">
+        <input type="text" placeholder="title" id="title"/>
+        <div class="price">
+          <input onkeyup="getTotal()" type="number" placeholder="price" id="price"/>
+          <input onkeyup="getTotal()" type="number" placeholder="taxes" id="taxes" />
+          <input onkeyup="getTotal()" type="number" placeholder="ads" id="ads"/>
+          <input onkeyup="getTotal()" type="number" placeholder="discount" id="discount"/>
+          <small id="total"></small>
+        </div>
+        <input type="number" placeholder="count" id="count"/>
+        <input type="text" placeholder="category" id="category"/>
+        <button type="button" id="submit"> create</button>
+      </div>
+      <div class="output">
+        <div class="searchBlock">
+          <input type="text" onkeyup="searchData(this.value)" id="searchBox" placeholder="Search">
+          <div class="btnsearch">
+            <button onclick="getSearchMood(this.id)" id="searchTitle">Search by Title</button>
+            <button onclick="getSearchMood(this.id)" id="searchCategory">Search by Category</button>
+          </div>
+        </div>
+        <div id="deleteAll">
+
+        </div>
+        <table>
+          
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+          </tr>
+          <tbody id="tbody">
+
+          </tbody>
+        </table>
+      </div>
+    <div class="copyRight">
+      <p>Copyright © 2023 - All Right Reserved.</p>
+
+       <p>Designed by <span>Omar Al Zoubi</span> </p>
+    </div>
+      
+
+    </div>
+   
+   
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

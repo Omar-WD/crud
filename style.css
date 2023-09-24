@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+body{
+    background-color: #222;
+    color: white;
+    font-family: system-ui;
+    
+}
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 0;
+
+}
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #111;
+    margin: 10px 4px;
+    border-radius: 4px;
+    padding: 5px;
+    color: #fff;
+}
+
+input:focus{
+    background-color: #000;
+    transform: scale(1.1);
+}
+
+.price input{
+    width: 20%;
+}
+#total{
+    background-color: rgb(185, 24, 24);
+    padding: 8px 5px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+#total::before{
+    content: "Total: ";
+}
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(23, 75, 77);
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: rgb(46, 131, 134);
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.btnsearch{
+    display: flex;
+    justify-content: space-between;
+}
+.btnsearch button{
+    width: 45%;
+}
+
+#deleteAll{
+    margin: 20px 0;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+table th{
+    text-transform: uppercase;
+}
+
+td th{
+    padding: 5px;
+}
+.error{
+    color: red;
+}
+.output{
+   min-height: 43vh;
+}
+.copyRight{
+    /* width: 80%; */
+    display: flex;
+    position: relative;
+    margin-top: 30px;
+    bottom: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    color: gray;
+}
+.copyRight p span{
+    color: rgb(246, 236, 236);
+}
+
+@media only screen and (max-width: 850px){
+    tr{font-size: 14px;
+    }
+    .crud{
+        width: 90%;
+    }
+    .price input{
+        width: 19%;
+    }
+}
+@media only screen and (max-width: 750px){
+    tr{font-size: 12px;   
+    }
+    .crud{
+        width: 95%;
+    }
+    .price input{
+        width: 18%;
+    }
+}
+@media only screen and (max-width: 600px){
+    tr{font-size: 10px; 
+    }
+    .crud{
+        width: 100%;
+    }
+    .price input{
+        width: 17%;
+    }
+}
+@media only screen and (max-width: 400px){
+
+    .price input{
+        width: 16%;
+    }
+}
